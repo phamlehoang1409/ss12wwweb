@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../session12/lythuyet/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+    <div class="card p-4 shadow-sm">
+        <h4 class="mb-3">Payment</h4>
+        
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="credit" name="paymentMethod" checked>
+            <label class="form-check-label" for="credit">Credit card</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="debit" name="paymentMethod">
+            <label class="form-check-label" for="debit">Debit card</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="paypal" name="paymentMethod">
+            <label class="form-check-label" for="paypal">PayPal</label>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <label for="nameOnCard" class="form-label">Name on card</label>
+                <input type="text" class="form-control" id="nameOnCard" placeholder="Full name as displayed on card">
+            </div>
+            <div class="col-md-6">
+                <label for="cardNumber" class="form-label">Credit card number</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="•••• •••• •••• ••••">
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <label for="expiration" class="form-label">Expiration</label>
+                <input type="text" class="form-control" id="expiration" placeholder="MM/YY">
+            </div>
+            <div class="col-md-6">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cvv" placeholder="123">
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <button class="btn btn-primary w-100">Continue to checkout</button>
+    </div>
+</div>
+
+</body>
+</html>
